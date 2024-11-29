@@ -22,4 +22,4 @@
 #       ansible_user: centos
 
 [atlantis_server]
-172.16.24.4
+<your-machine-ip>
