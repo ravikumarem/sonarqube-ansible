@@ -1,0 +1,28 @@
+galaxy_info:
+  author: Asista
+  description: Ansible role for installing and configuring SonarQube.
+  company: Asista
+
+  # License for the role. Choose the one that suits your needs.
+  license: MIT
+
+  # Minimum version of Ansible required to use this role.
+  min_ansible_version: 2.12
+
+  # Supported platforms and their versions.
+  platforms:
+    - name: Ubuntu
+      versions:
+        - 22.04
+        - all
+
+  # Tags for categorization on Ansible Galaxy.
+  galaxy_tags:
+    - sonarqube
+    - ubuntu
+    - ansible
+    - ci-cd
+    - postgresql
+    - devops
+
+dependencies: []
