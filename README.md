@@ -1,6 +1,6 @@
 Original code credits: https://github.com/MakariosNassef/SonarQube_via_Ansible
 
-I have used the same code, and modified the variables according to our requirements and ran this ansible pplaybook.
+I have used the same code, and modified the variables according to our requirements and ran this ansible playbook.
 
 To run on the Ubuntu machine( I have choosen ubuntu 22.04 specifically and tried this code), please run below few commands manually before running the playbbok file.
 
