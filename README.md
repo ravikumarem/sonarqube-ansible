@@ -2,13 +2,13 @@ Original code credits: https://github.com/MakariosNassef/SonarQube_via_Ansible
 
 I have used the same code, and modified the variables according to our requirements and ran this ansible playbook.
 
-To run on the Ubuntu machine( I have chosen ubuntu 22.04 specifically and tried this code), please run below few commands manually before running the playbook file.
+To run on the Ubuntu machine (I have chosen ubuntu 22.04 specifically and tried this code), please run below few commands manually before running the playbook file. 
  ```bash
 $ sudo apt install python3-pip
 $ sudo pip3 install passlib
  ```
 
-You can run these commands for temporary fix, as SonarQube requires these sizes instead of default sizes.
+You can run these commands for temporary fix, as SonarQube requires these sizes instead of default sizes. 
 ```bash
 $ sudo sysctl -w vm.max_map_count=262144
 $ sudo sysctl -w fs.file-max=65536
@@ -28,9 +28,9 @@ $ sudo add-apt-repository --yes --update ppa:ansible/ansible
 $ sudo apt install ansible
 ```
 
-I have used inventory file as just the mchine IP in it, to avoid passing the PEM key. You can follow the same or you can use above commands(in inventory file) to run the playbook.
+I have used inventory file as just the machine IP in it, to avoid passing the PEM key. You can follow the same or you can use the above commands (in inventory file) to run the playbook. 
 
-Let's say you wanted to use only the machine IP, then follow below commands. Copy your machine PEM key in the machine, and once it is copied and given permission for "id_rsa" and remove the key from machine once below commands ran.
+Let's say you wanted to use only the machine IP, then follow the commands below. Copy your machine PEM key in the machine, and once it is copied and given permission for "id_rsa" and remove the key from machine once below commands run. 
 
 ```bash
 $ cp /home/ubuntu/asista-mumbai-dev-key.pem ~/.ssh/id_rsa
