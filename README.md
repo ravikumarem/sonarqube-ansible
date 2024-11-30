@@ -4,8 +4,8 @@ I have used the same code, and modified the variables according to our requireme
 
 To run on the Ubuntu machine( I have choosen ubuntu 22.04 specifically and tried this code), please run below few commands manually before running the playbbok file.
  ```bash
-   $ sudo apt install python3-pip
-   $ sudo pip3 install passlib
+sudo apt install python3-pip
+sudo pip3 install passlib
  ```
 
 You can run these commands for temporary fix
