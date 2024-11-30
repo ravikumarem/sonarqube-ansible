@@ -8,7 +8,7 @@ $ sudo apt install python3-pip
 $ sudo pip3 install passlib
  ```
 
-You can run these commands for temporary fix
+You can run these commands for temporary fix, as SonarQube requires these sizes instead of default sizes.
 ```bash
 $ sudo sysctl -w vm.max_map_count=262144
 $ sudo sysctl -w fs.file-max=65536
