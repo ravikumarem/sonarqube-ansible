@@ -28,6 +28,16 @@ $ sudo add-apt-repository --yes --update ppa:ansible/ansible
 $ sudo apt install ansible
 ```
 
+I have used inventory file as just the mchine IP in it, to avoid passing the PEM key. You can follow the same or you can use above commands(in inventory file) to run the playbook.
+
+Let's say you wanted to use only the machine IP, then follow below commands. Copy your machine PEM key in the machine, and once it is copied and given permission for "id_rsa" and remove the key from machine once below commands ran.
+
+```bash
+$ cp /home/ubuntu/asista-mumbai-dev-key.pem ~/.ssh/id_rsa
+$ chmod 400 ~/.ssh/id_rsa
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_rsa
+```
 
 Run the playbook using 
 ```bash
