@@ -33,7 +33,7 @@ I have used inventory file as just the machine IP in it, to avoid passing the PE
 Let's say you wanted to use only the machine IP, then follow the commands below. Copy your machine PEM key in the machine, and once it is copied and given permission for "id_rsa" and remove the key from machine once below commands run. 
 
 ```bash
-$ cp /home/ubuntu/asista-mumbai-dev-key.pem ~/.ssh/id_rsa
+$ cp /home/ubuntu/key.pem ~/.ssh/id_rsa
 $ chmod 400 ~/.ssh/id_rsa
 $ eval "$(ssh-agent -s)"
 $ ssh-add ~/.ssh/id_rsa
