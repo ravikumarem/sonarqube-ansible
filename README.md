@@ -2,6 +2,15 @@ Original code credits: https://github.com/MakariosNassef/SonarQube_via_Ansible
 
 I have used the same code, and modified the variables according to our requirements and ran this ansible playbook.
 
+
+Install Ansible, https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html
+```bash
+$ sudo apt update
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+$ sudo apt install ansible
+```
+
 To run on the Ubuntu machine (I have chosen ubuntu 22.04 specifically and tried this code), please run below few commands manually before running the playbook file. 
  ```bash
 $ sudo apt install python3-pip
@@ -18,14 +27,6 @@ If want to persist the changes, add the below content in the file /etc/sysctl.co
 ```bash
 vm.max_map_count=262144
 fs.file-max=65536
-```
-
-Install Ansible, https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html
-```bash
-$ sudo apt update
-$ sudo apt install software-properties-common
-$ sudo add-apt-repository --yes --update ppa:ansible/ansible
-$ sudo apt install ansible
 ```
 
 I have used inventory file as just the machine IP in it, to avoid passing the PEM key. You can follow the same or you can use the above commands (in inventory file) to run the playbook. 
